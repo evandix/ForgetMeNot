@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context="com.androidy.forgetmenot.ui.HomeScreenActivity"
+                android:background="@drawable/backgroundone">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/deleteButton"
+        android:background="#A1FFFFFF"
+        android:layout_below="@+id/bioText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use!"
+        android:id="@+id/useButton"
+        android:layout_below="@android:id/list"
+        android:layout_alignEnd="@+id/imageView4"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/nikolatessla"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/forgetmenotflower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:id="@+id/bioText"
+        android:background="#A1FFFFFF"
+        android:layout_below="@+id/imageView4"
+        android:scrollbars="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/birthDeathDates"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffa6a6a6"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mapImageButton"
+            android:src="@drawable/pin"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/compasImageButton"
+            android:src="@drawable/compass"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addImageButton"
+            android:src="@drawable/plus"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/allAboutImageButtonStory"
+            android:src="@drawable/historyicon"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsImage"
+            android:src="@drawable/gear"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
